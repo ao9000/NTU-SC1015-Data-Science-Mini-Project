@@ -86,6 +86,7 @@ For the cleaned dataset, please download it from [here](https://drive.google.com
 - Logistic regression model training & evaluation
 - Converting unstructured text into text vectors using TF-IDF scoring metric
 - Using Python libraries with pre-trained models to predict and generate emotions & sentiment
+- Plotting correlation matrix with categorical data
 
 
 ## Contributors
