@@ -28,7 +28,7 @@ For the cleaned dataset, please download it from [here](https://drive.google.com
       - Drop empty rows after all cleaning steps (Dirty data)
     - Data generation
       - Word count & char count
-      - Stopword count
+      - Stopwords count
       - Sentiment
       - Emotions
       - Parts-of-speech (POS)
@@ -47,14 +47,46 @@ For the cleaned dataset, please download it from [here](https://drive.google.com
    - Attempt 1 (Decision Tree)
      - Train with top 5 predictors
      - Average accuracy: 0.73
+     - Model evaluation
+       - Plotting decision tree
+       - Confusion matrix
    - Attempt 2 (Random Forest)
      - Train with top 5 predictors
      - Average accuracy: 0.75
+     - Model evaluation
+       - Confusion matrix
+       - Grid search hyper-parameter tuning
 
-4. [Model Training Attempt 3](<Model Training Attempt 3.ipynb>)
-    - Attempt 3 (Logistic Regression)
-      - Train with only title
-      - Average accuracy: 0.93
+5. [Model Training Attempt 3](<Model Training Attempt 3.ipynb>)
+   - TF-IDF analysis 
+   - Attempt 3 (Logistic Regression)
+     - Train with only title
+     - Average accuracy: 0.93
+     - Model evaluation
+       - Confusion Matrix
+       - Recall, precision, F1 score
+       - Receiver Operating Characteristic (ROC) Curve & Area Under Curve (AUC)
+       - Model weights
+
+## Conclusion
+- Surprisingly, polarity & emotions does not have a strong relation to fake news, therefore, not a good indicator of fake news.
+- Instead, indicators such as title wordcount, title adjective count, and text stopwords count are the best indicators to fake news. 
+- Based on attempt 3, detection of fake news using title is sufficient. However, for the best results, author & title are required.
+- Out of all the 3 models we implemented, decision tree performed the worst while logistic regression performed the best.
+- Based on findings, we can suggest that from a reader's perspective in identifying fake news, author is a quick & credible identifier, and the title could further support a reader's attempt in identifying fake news.
+
+## Key learning points
+- NLP & Text processing techniques
+  - Removal of stopwords
+  - Removal of noisy data (Numbers & symbols)
+  - Word stemming
+  - Sentiment & emotion analysis
+  - Parts-of-speech (POS)
+  - N-gram analysis (Bi-grams)
+- Logistic regression model training & evaluation
+- Converting unstructured text into text vectors using TF-IDF scoring metric
+- Using Python libraries with pre-trained models to predict and generate emotions & sentiment
+
 
 ## Contributors
 
