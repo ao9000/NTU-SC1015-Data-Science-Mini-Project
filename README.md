@@ -17,6 +17,9 @@ The dataset used for this project is retrieved from [here](https://www.kaggle.co
 
 For the cleaned dataset, please download it from [here](https://drive.google.com/file/d/1asgxcQTREf-sDYe1p71gmoY7G2fqFQyJ/view?usp=sharing)
 
+## Presentation
+The presentation video can be found [here](https://www.youtube.com/watch?v=kcXan2_hB1g)
+
 ## Brief process walkthrough (In order)
 
 1. [Data Preparation & Cleaning](<Data Preparation & Cleaning.ipynb>)
